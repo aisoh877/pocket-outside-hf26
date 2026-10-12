@@ -1,0 +1,22 @@
+[
+  {
+    "file": "ONNX-ThirdPartyNotices.txt",
+    "url": "https://raw.githubusercontent.com/microsoft/onnxruntime/8d85527a0/ThirdPartyNotices.txt",
+    "sha256": "143764b952fdb1a7c69ce653bfba74a7744d6a8a573bfb73e235fba356c83de3"
+  },
+  {
+    "file": "ONNX-Runtime-MIT.txt",
+    "url": "https://raw.githubusercontent.com/microsoft/onnxruntime/8d85527a0/LICENSE",
+    "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+  },
+  {
+    "file": "Jinja-MIT.txt",
+    "package": "@huggingface/jinja",
+    "sha256": "d6e7b19451c1b3d1d66353bb4b1274138953b3bfd9ae60c56e77b1f548796982"
+  },
+  {
+    "file": "Tokenizers-Apache-2.0.txt",
+    "package": "@huggingface/tokenizers",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  }
+]
