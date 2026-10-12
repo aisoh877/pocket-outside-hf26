@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-11T07:25:23.897687+00:00",
+  "browser": "Chrome, existing extension, one newly created demo tab",
+  "origin": "http://127.0.0.1:4317/",
+  "actualModelInference": "pass after explicitly enabling local models in browser environment",
+  "firstSuccessfulCard": "Make a tiny sound map",
+  "constraints": "5 minutes, stay in one spot",
+  "additionalGeneration": "Visit one plant; sheltered setting",
+  "anotherIdea": "Notice the light then Borrow a piece of sky",
+  "unsafeConditions": "pass before generation and after an existing card; outdoor action hidden",
+  "download": {
+    "pass": true,
+    "bytes": 472,
+    "sha256": "88fad5942be1ecc0b7f3a0a1fc5266acb44586c506ddb0e00a97f0c301ab4144",
+    "verification": "Downloaded file exactly matches authored mission takeaway"
+  },
+  "reflection": {
+    "fictionalFixtureOnly": true,
+    "saved": true,
+    "restoredAfterReload": true,
+    "deletedViaUi": true,
+    "remainedDeletedAfterReload": true
+  },
+  "responsive": {
+    "width": 390,
+    "documentWidth": 390,
+    "horizontalOverflow": false,
+    "screenshotReviewed": true,
+    "temporaryViewportReset": true
+  },
+  "keyboard": "Tab from thought input reached A quiet moment with visible focus; not an exhaustive accessibility audit",
+  "console": {
+    "finalErrors": 0,
+    "warnings": 2,
+    "warning": "Content-Length absent; library expands buffer when needed"
+  },
+  "recording": {
+    "performed": false,
+    "reason": "No video-recording API advertised for this tab; OS recording/permissions not used"
+  },
+  "limitations": [
+    "No full network trace was captured; runtime disables remote model loading in source.",
+    "No real outdoor field trial or public-host cold-load test.",
+    "Download event observer timed out, but actual saved file and content were verified.",
+    "Initial ready-status wait timed out; subsequent UI inspection confirmed successful inference."
+  ],
+  "initialBug": {
+    "error": "Both local and remote models disabled in browser defaults",
+    "fixed": "env.allowLocalModels = true; remote loading remains false"
+  },
+  "publicSubmission": false
+}

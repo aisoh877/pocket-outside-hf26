@@ -1,0 +1,106 @@
+{
+  "checkedAt": "2026-10-11T01:15:24.017Z",
+  "base": "/",
+  "test": "Actual Vite production preview over loopback HTTP; no browser",
+  "passed": true,
+  "entries": [
+    {
+      "path": "/",
+      "status": 200,
+      "type": "text/html",
+      "bytes": 444,
+      "passed": true
+    },
+    {
+      "path": "/assets/index-Ba6oKRKW.js",
+      "status": 200,
+      "type": "text/javascript",
+      "bytes": 16371,
+      "passed": true
+    },
+    {
+      "path": "/assets/index-CG__btta.css",
+      "status": 200,
+      "type": "text/css",
+      "bytes": 5032,
+      "passed": true
+    },
+    {
+      "path": "/ort/ort-wasm-simd-threaded.asyncify.mjs",
+      "status": 200,
+      "type": "text/javascript",
+      "bytes": 53057,
+      "passed": true
+    },
+    {
+      "path": "/ort/ort-wasm-simd-threaded.asyncify.wasm",
+      "status": 200,
+      "type": "application/wasm",
+      "bytes": 26861777,
+      "passed": true
+    },
+    {
+      "path": "/models/Xenova/all-MiniLM-L6-v2/config.json",
+      "status": 200,
+      "type": "application/json",
+      "bytes": 650,
+      "passed": true
+    },
+    {
+      "path": "/models/Xenova/all-MiniLM-L6-v2/tokenizer.json",
+      "status": 200,
+      "type": "application/json",
+      "bytes": 711661,
+      "passed": true
+    },
+    {
+      "path": "/models/Xenova/all-MiniLM-L6-v2/tokenizer_config.json",
+      "status": 200,
+      "type": "application/json",
+      "bytes": 366,
+      "passed": true
+    },
+    {
+      "path": "/models/Xenova/all-MiniLM-L6-v2/special_tokens_map.json",
+      "status": 200,
+      "type": "application/json",
+      "bytes": 125,
+      "passed": true
+    },
+    {
+      "path": "/models/Xenova/all-MiniLM-L6-v2/onnx/model_quantized.onnx",
+      "status": 200,
+      "type": "",
+      "bytes": 22972370,
+      "passed": true
+    },
+    {
+      "path": "/licenses/ONNX-Runtime-MIT.txt",
+      "status": 200,
+      "type": "text/plain",
+      "bytes": 1073,
+      "passed": true
+    },
+    {
+      "path": "/licenses/Pocket-Outside-MIT.txt",
+      "status": 200,
+      "type": "text/plain",
+      "bytes": 1065,
+      "passed": true
+    },
+    {
+      "path": "/licenses/THIRD_PARTY_NOTICES.md",
+      "status": 200,
+      "type": "text/markdown",
+      "bytes": 1818,
+      "passed": true
+    },
+    {
+      "path": "/licenses/ONNX-ThirdPartyNotices.txt",
+      "status": 200,
+      "type": "text/plain",
+      "bytes": 338088,
+      "passed": true
+    }
+  ]
+}

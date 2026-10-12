@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { eligibleMissions, rankMissions, readSession, makeTakeaway } from '../src/engine.js';
+const p = { wish: 'A quiet moment', minutes: 5, movement: 'still', conditions: 'sheltered' };
+test('time, movement and shelter filters exclude incompatible cards', () => { const ms = eligibleMissions(p); assert.ok(ms.length > 0); assert.ok(ms.every(m => m.minutes <= 5 && m.movement === 'still' && m.sheltered)); });
+test('unsafe conditions produce no outdoor recommendation', () => assert.deepEqual(eligibleMissions({ ...p, conditions: 'unsafe' }), []));
+test('bad input is rejected', () => { for (const q of [{ ...p, wish: '' }, { ...p, minutes: 0 }, { ...p, movement: 'flying' }, { ...p, conditions: 'maybe' }, { ...p, wish: 'a'.repeat(241) }]) assert.throws(() => eligibleMissions(q)); });
+test('semantic scores only rank eligible candidates and reject invalid vectors', () => { const ms = eligibleMissions(p).slice(0, 2); const v = { [ms[0].id]: [0, 1], [ms[1].id]: [1, 0] }; assert.equal(rankMissions(ms, [1, 0], v)[0].id, ms[1].id); assert.throws(() => rankMissions(ms, [NaN, 0], v)); });
+test('restoration rejects stale, unknown and malformed sessions', () => { for (const s of ['bad', '{}', JSON.stringify({ missionId: 'sound-map', startedAt: 1, phase: 'outside' })]) assert.equal(readSession(s), null); const s = readSession(JSON.stringify({ missionId: 'sound-map', startedAt: Date.now(), phase: 'done', note: 'A bird' })); assert.equal(s.note, 'A bird'); });
+test('pocket note contains all steps and reflection', () => { const m = eligibleMissions(p)[0]; const note = makeTakeaway(m); m.steps.forEach(s => assert.ok(note.includes(s))); assert.ok(note.includes(m.reflection)); });
+test('completed reflections remain available after a day', () => { const s = readSession(JSON.stringify({ missionId: 'sound-map', startedAt: Date.now() - 3 * 86400000, phase: 'done', note: 'Kept detail' })); assert.equal(s.note, 'Kept detail'); });

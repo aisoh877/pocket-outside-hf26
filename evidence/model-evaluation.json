@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-10-11T01:01:04.875Z",
+  "inference": "real local ONNX q8 / CPU / one thread / remote models disabled",
+  "model": "Xenova/all-MiniLM-L6-v2",
+  "milliseconds": 176,
+  "passed": 6,
+  "total": 6,
+  "limitation": "Six authored smoke cases, not a general accuracy benchmark. Browser WASM is a separate verification.",
+  "results": [
+    {
+      "query": "I want to hear the birds and nearby sounds in a quiet place",
+      "expected": [
+        "sound-map",
+        "bird-watch"
+      ],
+      "selected": "sound-map",
+      "passed": true,
+      "top3": [
+        {
+          "id": "sound-map",
+          "similarity": 0.7261
+        },
+        {
+          "id": "bird-watch",
+          "similarity": 0.5498
+        },
+        {
+          "id": "tree-neighbour",
+          "similarity": 0.3692
+        }
+      ]
+    },
+    {
+      "query": "I want to tend the plants in my balcony pots",
+      "expected": [
+        "garden-check"
+      ],
+      "selected": "garden-check",
+      "passed": true,
+      "top3": [
+        {
+          "id": "garden-check",
+          "similarity": 0.7421
+        },
+        {
+          "id": "colour-hunt",
+          "similarity": 0.2188
+        },
+        {
+          "id": "tree-neighbour",
+          "similarity": 0.2174
+        }
+      ]
+    },
+    {
+      "query": "I need to stretch my legs and go for an energetic walk",
+      "expected": [
+        "small-stride"
+      ],
+      "selected": "small-stride",
+      "passed": true,
+      "top3": [
+        {
+          "id": "small-stride",
+          "similarity": 0.6718
+        },
+        {
+          "id": "companion-loop",
+          "similarity": 0.3118
+        },
+        {
+          "id": "colour-hunt",
+          "similarity": 0.2232
+        }
+      ]
+    },
+    {
+      "query": "I want to watch clouds drift across the sky",
+      "expected": [
+        "sky-frame"
+      ],
+      "selected": "sky-frame",
+      "passed": true,
+      "top3": [
+        {
+          "id": "sky-frame",
+          "similarity": 0.4346
+        },
+        {
+          "id": "light-study",
+          "similarity": 0.2671
+        },
+        {
+          "id": "bird-watch",
+          "similarity": 0.2564
+        }
+      ]
+    },
+    {
+      "query": "I want to find beautiful colours in flowers and leaves",
+      "expected": [
+        "colour-hunt"
+      ],
+      "selected": "colour-hunt",
+      "passed": true,
+      "top3": [
+        {
+          "id": "colour-hunt",
+          "similarity": 0.6217
+        },
+        {
+          "id": "texture-notebook",
+          "similarity": 0.3969
+        },
+        {
+          "id": "garden-check",
+          "similarity": 0.3601
+        }
+      ]
+    },
+    {
+      "query": "I want a gentle conversation with a friend while walking",
+      "expected": [
+        "companion-loop"
+      ],
+      "selected": "companion-loop",
+      "passed": true,
+      "top3": [
+        {
+          "id": "companion-loop",
+          "similarity": 0.6328
+        },
+        {
+          "id": "sound-map",
+          "similarity": 0.4309
+        },
+        {
+          "id": "small-stride",
+          "similarity": 0.3279
+        }
+      ]
+    }
+  ]
+}

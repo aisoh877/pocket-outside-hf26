@@ -1,0 +1,25 @@
+{
+  "project": "dev-touch-grass",
+  "checkedAt": "2026-10-11T07:25:23.897687+00:00",
+  "lint": "pass",
+  "tests": 11,
+  "build": "pass",
+  "realCpuModelCases": 6,
+  "nodeWasm": "pass",
+  "dependencyAudit": "0 vulnerabilities",
+  "browser": "pass: real model, constraints, unsafe stop, downloaded file, reflection save/reload/delete, repeated generation, 390px",
+  "screenRecording": "not performed: no advertised scoped video recording API",
+  "publicSubmission": "not performed",
+  "modelFilesSha256": "all match pinned manifest",
+  "limitations": [
+    "DOM tests inject a mock AI adapter; real inference tested separately.",
+    "No general accuracy claim or real outdoor/Alexa field test."
+  ],
+  "loopbackHttp": true,
+  "secretScan": "gitleaks staged source: 0 leaks",
+  "loopbackHttpResources": 14,
+  "projectSubpathHttp": "pass at /pocket-outside-hf26/; 14 resources",
+  "publicationLicenses": "application, runtime, third-party notices and model manifest copied to static build",
+  "browserConsoleWarnings": 2,
+  "browserConsoleErrors": 0
+}
