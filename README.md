@@ -78,7 +78,7 @@ Application logic, activity cards, CSS landscape and copy were newly written on 
 
 ## Submission state
 
-`submission/dev-post.md` and `submission/demo-script.md` are drafts. No repository has been published, no video recorded/uploaded, and no entry submitted. Public code and demo URLs must be supplied before submission. The challenge ends **2026-10-12 06:59 UTC / 15:59 JST**. All later commits must be explicitly recorded below; never imply post-deadline improvements existed at submission.
+`submission/dev-post.md` and `submission/demo-script.md` are drafts. Source is published at https://github.com/aisoh877/pocket-outside-hf26 with aisoh877 and GitHub noreply commit attribution. Public demo deployment is in progress; no video has been recorded/uploaded and no DEV entry has been submitted. Public demo operation must be verified before submission. The challenge ends **2026-10-12 06:59 UTC / 15:59 JST**. All later commits must be explicitly recorded below; never imply post-deadline improvements existed at submission.
 
 ### Post-deadline changes
 
