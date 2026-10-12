@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-10-11T01:01:04.875Z",
+  "checkedAt": "2026-10-12T00:11:28.925Z",
   "inference": "real local ONNX q8 / CPU / one thread / remote models disabled",
   "model": "Xenova/all-MiniLM-L6-v2",
-  "milliseconds": 176,
+  "milliseconds": 284,
   "passed": 6,
   "total": 6,
   "limitation": "Six authored smoke cases, not a general accuracy benchmark. Browser WASM is a separate verification.",

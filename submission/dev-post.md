@@ -18,15 +18,15 @@ The important button is **I'm heading out**. The activity has three short steps 
 
 ## Demo
 
-**Public demo or video: [INSERT VERIFIED PUBLIC URL]**
+**Public demo or video: https://aisoh877.github.io/pocket-outside-hf26/**
 
 The intended demonstration is: ask for a quiet moment, choose a five-minute stationary activity, take the sound-map card, then return and write one detail. A second pass shows that selecting unsafe conditions yields no outdoor recommendation.
 
-This is a local prototype. In Chrome, I verified the real model, generated cards, downloaded note, return-note persistence and deletion, unsafe-condition stop, repeated use and a 390-pixel layout. Video recording, public hosting and a real outdoor trial are still pending.
+This is a local prototype. In Chrome, I verified the real model, generated cards, downloaded note, return-note persistence and deletion, unsafe-condition stop, repeated use and a 390-pixel layout. Public hosting and model/WASM asset delivery are verified. Interaction on the public URL, video recording and a real outdoor trial are still pending.
 
 ## Code
 
-**Public repository: [INSERT VERIFIED PUBLIC REPOSITORY URL]**
+**Public repository: https://github.com/aisoh877/pocket-outside-hf26**
 
 The application is MIT licensed. The repository includes setup instructions, a model manifest with hashes, tests, and the model evaluation results. The application and repository were started during this challenge window, on October 11, 2026. Codex assisted with implementation and testing.
 
